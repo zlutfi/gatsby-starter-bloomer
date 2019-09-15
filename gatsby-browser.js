@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
+// Bulma Framework imports
+import "@fortawesome/fontawesome-free/js/all.js"
+import "./src/styles/mystyles.scss"
