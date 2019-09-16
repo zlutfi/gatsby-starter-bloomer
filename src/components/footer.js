@@ -1,6 +1,5 @@
 import React from "react"
-// import PropTypes from "prop-types"
-import { Footer, Container, Content, Columns, Column } from "bloomer"
+import { Footer, Container, Content, Columns, Column, Icon } from "bloomer"
 
 const MainFooter = () => {
   return (
@@ -8,15 +7,16 @@ const MainFooter = () => {
       <Container>
         <Content>
           <Columns>
-            <Column isFull>
+            <Column>
               <p>
                 Made with{" "}
+                <Icon hasTextColor="danger" className="fa fa-heart"></Icon> by{" "}
                 <a
-                  href="https://bloomer.js.org"
+                  href="https://zlicreative.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Bloomer Components
+                  ZLI Creative
                 </a>
               </p>
             </Column>
@@ -47,8 +47,21 @@ const MainFooter = () => {
             <p>
               © {new Date().getFullYear()}, Built with
               {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a> and{" "}
-              <a href="https://bulma.io">Bulma</a> by ZL
+              <a
+                href="https://www.gatsbyjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gatsby
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://bloomer.js.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bloomer Components
+              </a>{" "}
             </p>
           </Content>
         </Content>
@@ -56,7 +69,5 @@ const MainFooter = () => {
     </Footer>
   )
 }
-
-// Footer.propTypes = {}
 
 export default MainFooter
