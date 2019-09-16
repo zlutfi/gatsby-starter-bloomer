@@ -1,38 +1,67 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Section, Container, Title, Subtitle, Button } from "bloomer"
+import PropTypes from "prop-types"
+import { Link, graphql } from "gatsby"
+import {
+  Section,
+  Container,
+  Title,
+  Subtitle,
+  Button,
+  Columns,
+  Column,
+} from "bloomer"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
-    <body>
-      <Section>
-        <Container>
-          <Title>Hi people</Title>
-          <Subtitle>
-            Welcome to your new Gatsby site. Now go build something{" "}
-            <strong>great</strong>.
-          </Subtitle>
-          <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <Hero
+      siteTitle={data.site.siteMetadata.title}
+      description={data.site.siteMetadata.description}
+    />
+    <Section className="has-background-white">
+      <Container>
+        <Columns>
+          <Column isSize="2/3">
+            <Title>Hi people</Title>
+            <Subtitle>
+              Welcome to your new Gatsby site. Now go build something{" "}
+              <strong>great</strong>.
+            </Subtitle>
+            <Link to="/page-2/">
+              <Button isColor="primary">Go to page 2</Button>
+            </Link>
+          </Column>
+          <Column isSize="1/3">
             <Image />
-          </div>
-          <Link to="/page-2/">
-            <Button isColor="primary" isOutlined>
-              Go to page 2
-            </Button>
-          </Link>
-
-          {/* <Link to="/page-2/">Go to page 2</Link> */}
-        </Container>
-      </Section>
-    </body>
+          </Column>
+        </Columns>
+      </Container>
+    </Section>
   </Layout>
 )
 
+IndexPage.propTypes = {
+  site: PropTypes.shape({
+    siteMetadata: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    }),
+  }),
+}
 export default IndexPage
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`
