@@ -3,7 +3,7 @@ import { Footer, Container, Content, Columns, Column, Icon } from "bloomer"
 
 const MainFooter = () => {
   return (
-    <Footer id="footer">
+    <Footer>
       <Container>
         <Content>
           <Columns>
@@ -22,28 +22,6 @@ const MainFooter = () => {
             </Column>
           </Columns>
           <Content isSize="small">
-            <p>
-              The source code is licensed under{" "}
-              <a
-                href="http://opensource.org/licenses/mit-license.php"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                MIT
-              </a>
-              .
-            </p>
-            <p>
-              The website content is licensed under{" "}
-              <a
-                href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CC ANS 4.0
-              </a>
-              .
-            </p>
             <p>
               © {new Date().getFullYear()}, Built with
               {` `}
