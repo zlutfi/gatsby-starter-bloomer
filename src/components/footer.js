@@ -6,42 +6,46 @@ const MainFooter = () => {
     <Footer>
       <Container>
         <Content>
-          <Columns>
-            <Column>
-              <p>
-                Made with{" "}
-                <Icon hasTextColor="danger" className="fa fa-heart"></Icon> by{" "}
-                <a
-                  href="https://zlicreative.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ZLI Creative
-                </a>
-              </p>
-            </Column>
-          </Columns>
-          <Content isSize="small">
-            <p>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a
-                href="https://www.gatsbyjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Gatsby
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://bloomer.js.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bloomer Components
-              </a>{" "}
-            </p>
-          </Content>
+          <p>
+            Made with{" "}
+            <Icon hasTextColor="danger" className="fa fa-heart"></Icon> by{" "}
+            <a
+              href="https://zlicreative.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ZLI Creative
+            </a>
+          </p>
+        </Content>
+        <Content isSize="small">
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a
+              href="https://www.gatsbyjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatsby
+            </a>
+            ,{" "}
+            <a
+              href="https://bulma.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bulma
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://bloomer.js.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bloomer Components
+            </a>{" "}
+          </p>
         </Content>
       </Container>
     </Footer>

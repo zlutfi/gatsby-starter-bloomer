@@ -10,7 +10,7 @@ const SecondPage = () => (
     <SEO title="Page two" />
     <Section className="has-background-white">
       <Container>
-        <Title>Hi from the second page</Title>
+        <Title isSpaced>Hi from the second page</Title>
         <Subtitle>
           Welcome to page <strong>2</strong>
         </Subtitle>
