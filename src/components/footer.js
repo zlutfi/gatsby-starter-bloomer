@@ -1,5 +1,5 @@
 import React from "react"
-import { Footer, Container, Content, Columns, Column, Icon } from "bloomer"
+import { Footer, Container, Content, Icon } from "bloomer"
 
 const MainFooter = () => {
   return (
