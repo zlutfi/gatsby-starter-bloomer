@@ -9,6 +9,8 @@ import {
   Button,
   Columns,
   Column,
+  Content,
+  Tag,
 } from "bloomer"
 
 import Layout from "../components/layout"
@@ -27,12 +29,19 @@ const IndexPage = ({ data }) => (
       <Container>
         <Columns>
           <Column isSize="2/3">
-            <Title>Hi people</Title>
+            <Title isSpaced>Hi people</Title>
             <Subtitle>
-              Welcome to your new Gatsby site. Now go build something{" "}
-              <strong>great</strong>. This barebones starter ships with the main
-              Gatsby configuration files you might need.
+              Welcome to your new Gatsby site. This barebones starter ships with
+              the main Gatsby + Bloomer configuration files you might need.
             </Subtitle>
+            <Content>
+              <Title isSize="5">
+                This starter is configured for the following;
+              </Title>{" "}
+              <Tag isColor="light">Sass Ready</Tag>{" "}
+              <Tag isColor="light">Font Awesome Icons</Tag>{" "}
+              <Tag isColor="light">Progressive Web App</Tag>
+            </Content>
             <Link to="/page-2/">
               <Button isColor="primary">Go to page 2</Button>
             </Link>
