@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby + Bloomer`,
-    description: `Kick off your next, great Gatsby project with this default starter with Bloomer components. `,
+    description: `Kick off your next Gatsby project with Bloomer components. `,
     author: `@gatsbyjs`,
   },
   plugins: [
