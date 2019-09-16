@@ -30,7 +30,8 @@ const IndexPage = ({ data }) => (
             <Title>Hi people</Title>
             <Subtitle>
               Welcome to your new Gatsby site. Now go build something{" "}
-              <strong>great</strong>.
+              <strong>great</strong>. This barebones starter ships with the main
+              Gatsby configuration files you might need.
             </Subtitle>
             <Link to="/page-2/">
               <Button isColor="primary">Go to page 2</Button>
