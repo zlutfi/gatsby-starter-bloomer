@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-// If need, change your variables before importing Bulma
-$title-color: rebeccapurple;
-
 // Import a Google Font
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
@@ -10,6 +7,7 @@ $title-color: rebeccapurple;
 $purple: rebeccapurple;
 $pink: #fa7c91;
 $brown: #757763;
+$white: #fff;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
@@ -19,14 +17,26 @@ $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
 $link: $purple;
-$widescreen-enabled: false;
+$widescreen-enabled: true;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+// Navbar styles
+$navbar-background-color: $purple;
+$navbar-item-color: rgba(255, 255, 255, 0.7);
+$navbar-item-hover-color: #ccc;
+$navbar-item-hover-background-color: #592d86;
+$navbar-item-active-background-color: #592d86;
+$navbar-item-active-color: #fff;
+
+// Footer styles
+$footer-background-color: $white;
+$footer-color: true;
 
 // Import only what you need from Bulma
 @import "~bulma/sass/utilities/_all.sass";
@@ -36,3 +46,14 @@ $input-shadow: none;
 @import "~bulma/sass/form/_all.sass";
 @import "~bulma/sass/layout/_all.sass";
 @import "~bulma/sass/grid/_all.sass";
+
+// This sticks the footer to the bottom of the page
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
