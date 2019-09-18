@@ -5,27 +5,27 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "bloomer": "^0.6.5",
-    "bulma": "^0.7.5",
-    "gatsby": "^2.15.15",
-    "gatsby-cli": "^2.7.47",
-    "gatsby-image": "^2.2.19",
-    "gatsby-plugin-manifest": "^2.2.16",
-    "gatsby-plugin-offline": "^2.2.10",
-    "gatsby-plugin-react-helmet": "^3.1.7",
-    "gatsby-plugin-sass": "^2.1.14",
-    "gatsby-plugin-sharp": "^2.2.22",
-    "gatsby-source-filesystem": "^2.1.22",
-    "gatsby-transformer-sharp": "^2.2.14",
-    "node-sass": "^4.12.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "bloomer": "0.6.5",
+    "bulma": "0.7.5",
+    "gatsby": "2.15.15",
+    "gatsby-cli": "2.7.47",
+    "gatsby-image": "2.2.19",
+    "gatsby-plugin-manifest": "2.2.16",
+    "gatsby-plugin-offline": "2.2.10",
+    "gatsby-plugin-react-helmet": "3.1.7",
+    "gatsby-plugin-sass": "2.1.14",
+    "gatsby-plugin-sharp": "2.2.22",
+    "gatsby-source-filesystem": "2.1.22",
+    "gatsby-transformer-sharp": "2.2.14",
+    "node-sass": "4.12.0",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-helmet": "5.2.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
-    "prettier": "^1.18.2"
+    "@fortawesome/fontawesome-free": "5.10.2",
+    "prettier": "1.18.2"
   },
   "keywords": [
     "gatsby"
