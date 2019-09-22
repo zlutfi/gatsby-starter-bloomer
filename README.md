@@ -1,3 +1,9 @@
+[![GitHub issues](https://img.shields.io/github/issues/zlutfi/gatsby-starter-bloomer)](https://github.com/zlutfi/gatsby-starter-bloomer/issues)
+[![GitHub forks](https://img.shields.io/github/forks/zlutfi/gatsby-starter-bloomer)](https://github.com/zlutfi/gatsby-starter-bloomer/network)
+[![GitHub stars](https://img.shields.io/github/stars/zlutfi/gatsby-starter-bloomer)](https://github.com/zlutfi/gatsby-starter-bloomer/stargazers)
+[![GitHub license](https://img.shields.io/github/license/zlutfi/gatsby-starter-bloomer)](https://github.com/zlutfi/gatsby-starter-bloomer/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fzlutfi%2Fgatsby-starter-bloomer)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
