@@ -7,7 +7,7 @@
 
 This is a barebones Gatsby starter with Bloomer React components. Use this starter to get up and running quickly with your next Gatsby project.
 
-![](gb-desktop-view.jpg)
+![Screenshot](screenshot.jpg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7dc709f5-b670-4bf1-95b7-375e721b4c01/deploy-status)](https://app.netlify.com/sites/gatsby-starter-bloomer-db0aaf/deploys)
 
