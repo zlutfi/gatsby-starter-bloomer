@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby + Bloomer`,
     description: `Kick off your next Gatsby project with Bloomer components. `,
-    author: `@gatsbyjs`,
+    author: `@zlidev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
