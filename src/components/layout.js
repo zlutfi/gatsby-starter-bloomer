@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      {/* Wrapper for sticky footer */}
       <div className="site">
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <main className="site-content">{children}</main>

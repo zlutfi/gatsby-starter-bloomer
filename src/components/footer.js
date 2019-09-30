@@ -5,6 +5,7 @@ const MainFooter = () => {
   return (
     <Footer>
       <Container>
+        {/* Built by ZLI */}
         <Content>
           <p>
             Made with{" "}
@@ -18,6 +19,7 @@ const MainFooter = () => {
             </a>
           </p>
         </Content>
+        {/* Built with Gatsby, Bulma, and Bloomer */}
         <Content isSize="small">
           <p>
             © {new Date().getFullYear()}, Built with
