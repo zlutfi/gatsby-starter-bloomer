@@ -5,55 +5,87 @@ import {
   Section,
   Container,
   Title,
-  Subtitle,
-  Button,
-  Columns,
   Column,
   Content,
-  Tag,
+  Button,
+  Icon,
 } from "bloomer"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" />
-    <Hero
-      siteTitle={data.site.siteMetadata.title}
-      description={data.site.siteMetadata.description}
-    />
-    <Section className="has-background-white">
-      <Container>
-        <Columns>
+const IndexPage = ({ data }) => {
+  const page = data.site.siteMetadata
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Hero siteTitle={page.title} description={page.description} />
+      <Section>
+        <Container>
+          {/* Intro section  */}
           <Column isSize="2/3">
-            <Title isSpaced>Hi people</Title>
-            <Subtitle>
-              Welcome to your new Gatsby site. This barebones starter ships with
-              the main Gatsby + Bloomer configuration files you might need.
-            </Subtitle>
+            <Title>Welcome to your Gatsby site</Title>
             <Content>
-              <Title isSize="5">
-                This starter is configured for the following;
-              </Title>{" "}
-              <Tag isColor="light">Sass Ready</Tag>{" "}
-              <Tag isColor="light">Font Awesome Icons</Tag>{" "}
-              <Tag isColor="light">Progressive Web App</Tag>
+              <p>
+                This barebones starter ships with the main{" "}
+                <strong>Gatsby + Bloomer</strong> configuration files you might
+                need. Configured with only the <strong>bare minimums</strong>{" "}
+                needed to get your site started.
+              </p>
+              {/* List of features */}
+              <ul id="list-unstyled">
+                <li>
+                  <Icon
+                    className="fab fa-sass fa-lg has-text-primary"
+                    id="feature-icon"
+                  />
+                  Sass Ready
+                </li>
+                <li>
+                  <Icon
+                    className="fas fa-icons fa-lg has-text-primary"
+                    id="feature-icon"
+                  />
+                  Font Awesome Icons
+                </li>
+                <li>
+                  <Icon
+                    className="fas fa-tachometer-alt fa-lg has-text-primary"
+                    id="feature-icon"
+                  />
+                  Progressive Web App
+                </li>
+                <li>
+                  <Icon
+                    className="fas fa-caret-square-down fa-lg has-text-primary"
+                    id="feature-icon"
+                  />
+                  Sticky Footer
+                </li>
+              </ul>
+              {/* Navigate to page 2 */}
+              <p>
+                <Link to="/page-2/">
+                  <Button
+                    isColor="primary"
+                    className="is-rounded"
+                    id="btn-spaced"
+                  >
+                    <span>Go to page 2</span>
+                    <Icon className="fa fa-arrow-right fa-sm" />
+                  </Button>
+                </Link>
+              </p>
             </Content>
-            <Link to="/page-2/">
-              <Button isColor="primary">Go to page 2</Button>
-            </Link>
           </Column>
-          <Column isSize="1/3">
-            <Image />
-          </Column>
-        </Columns>
-      </Container>
-    </Section>
-  </Layout>
-)
+
+          {/* Features section begins */}
+        </Container>
+      </Section>
+    </Layout>
+  )
+}
 
 IndexPage.propTypes = {
   site: PropTypes.shape({
