@@ -5,16 +5,10 @@
 
 // Set your brand colors
 $purple: rebeccapurple;
-$pink: #fa7c91;
-$brown: #757763;
 $white: #fff;
-$beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
 $primary: $purple;
 $link: $purple;
 $widescreen-enabled: true;
@@ -35,10 +29,10 @@ $navbar-item-active-background-color: #592d86;
 $navbar-item-active-color: #fff;
 
 // Footer styles
-$footer-background-color: $white;
+$footer-background-color: #f7f8fa;
 $footer-color: true;
 
-// Import only what you need from Bulma
+// Import only what you need from Bulma. By default this starter contains all of the styles.
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/components/_all.sass";
@@ -47,7 +41,14 @@ $footer-color: true;
 @import "~bulma/sass/layout/_all.sass";
 @import "~bulma/sass/grid/_all.sass";
 
-// This sticks the footer to the bottom of the page
+// Font Awesome styles. Modify this to import only what you need.
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+/* ------------------------
+* Custom styles go here
+---------------------------*/
+
+// Stick the footer to the bottom of the page
 .site {
   display: flex;
   min-height: 100vh;
@@ -56,4 +57,16 @@ $footer-color: true;
 .site-content {
   flex-grow: 1;
   overflow: hidden;
+}
+// Modify list styles
+#list-unstyled {
+  list-style: none;
+}
+// Margins for buttons
+#btn-spaced {
+  margin: 1rem 0;
+}
+// Margins for features icons
+#feature-icon {
+  margin-right: 1.5rem;
 }
