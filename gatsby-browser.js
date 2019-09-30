@@ -6,6 +6,5 @@
 
 // You can delete this file if you're not using it
 
-// Bulma Framework imports
-import "@fortawesome/fontawesome-free/js/all.js"
+// Bulma Framework global scss
 import "./src/styles/mystyles.scss"
