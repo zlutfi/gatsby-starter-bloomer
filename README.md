@@ -19,6 +19,7 @@ This is a barebones Gatsby starter with Bloomer React components. Use this start
 - Sass Ready
 - Font Awesome Icons
 - Progressive Web App
+- Sticky footer
 
 <!-- Deploy to Netlify -->
 
