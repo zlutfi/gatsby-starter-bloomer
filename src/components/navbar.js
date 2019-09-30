@@ -8,7 +8,10 @@ import {
   NavbarBurger,
   NavbarEnd,
   NavbarMenu,
+  NavbarItem,
   Container,
+  Icon,
+  Button,
 } from "bloomer"
 
 export default class navbar extends Component {
@@ -27,6 +30,7 @@ export default class navbar extends Component {
     return (
       <Navbar>
         <Container>
+          {/* Site title link */}
           <NavbarBrand>
             <Link to="/" className="navbar-item">
               {this.props.siteTitle}
@@ -40,6 +44,7 @@ export default class navbar extends Component {
             isActive={this.state.isOpen}
             onClick={this.toggleCollapse}
           >
+            {/* Page nav links */}
             <NavbarEnd>
               <Link
                 to="/"
@@ -55,6 +60,19 @@ export default class navbar extends Component {
               >
                 Page 2
               </Link>
+              {/* Github download button */}
+              <NavbarItem>
+                <Button
+                  href="https://github.com/zlutfi/gatsby-starter-bloomer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="is-rounded"
+                  isSize="small"
+                >
+                  <span>Download on Github</span>
+                  <Icon className="fab fa-github fa-sm" />
+                </Button>
+              </NavbarItem>
             </NavbarEnd>
           </NavbarMenu>
         </Container>
