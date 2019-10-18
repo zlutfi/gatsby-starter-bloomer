@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bloomer": "0.6.5",
-    "bulma": "0.7.5",
+    "bulma": "0.8.0",
     "gatsby": "2.16.4",
     "gatsby-cli": "2.8.2",
     "gatsby-image": "2.2.29",
