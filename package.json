@@ -7,8 +7,8 @@
   "dependencies": {
     "bloomer": "0.6.5",
     "bulma": "0.8.0",
-    "gatsby": "2.19.39",
-    "gatsby-cli": "2.10.7",
+    "gatsby": "2.19.40",
+    "gatsby-cli": "2.10.8",
     "gatsby-image": "2.2.43",
     "gatsby-plugin-manifest": "2.2.47",
     "gatsby-plugin-offline": "3.0.40",
