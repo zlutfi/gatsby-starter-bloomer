@@ -24,7 +24,7 @@
     "react-helmet": "5.2.1"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "5.12.1",
+    "@fortawesome/fontawesome-free": "5.13.0",
     "prettier": "1.19.1"
   },
   "keywords": [
